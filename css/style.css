@@ -251,3 +251,11 @@ section.flexless {
 section:nth-child(1) h1 {
 	margin-bottom: 100px;
 }
+
+.about {
+	font-size: 70%;
+	line-height: 70%;
+}
+.about a {
+	text-decoration: none;
+}
