@@ -249,7 +249,7 @@ section.flexless {
 }
 
 section:nth-child(1) h1 {
-	margin-bottom: 100px;
+	margin-bottom: 10%;
 }
 
 section.about {
