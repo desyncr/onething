@@ -1,0 +1,23 @@
+{
+  "name": "onething",
+  "version": "0.0.1",
+  "homepage": "https://github.com/desyncr/onething",
+  "authors": [
+    "DC* <dario.cavuotti@gmail.com>"
+  ],
+  "description": "Inspirational text hacked together into a simple html5 page",
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Scrollify": "~0.1.6",
+    "jquery.easing": "~1.3.1",
+    "scroll2top": "~1.0.0"
+  }
+}
