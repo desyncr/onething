@@ -31,8 +31,10 @@ $(function() {
         }
     });
 
-    $("#top").scroll2Top({
-        appearAt: 2000,
-        scrollSpeed: 200
-    });
+    $.scrollUp({
+		animation: 'fade',
+		activeOverlay: '#00FFFF',
+        scrollFrom: 'top',
+		scrollImg: { active: true, type: 'background', src: '../img/top.png' }
+	});
 });
