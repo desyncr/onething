@@ -282,7 +282,7 @@ section.about a:hover {
 }
 
 
-@media only screen and (min-height:	300px) {
+@media only screen and (max-height: 300px) {
 	.scroll {
 		display: none;
 	}
