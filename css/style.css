@@ -1,0 +1,254 @@
+/*
+*	GENERAL STYLES
+*/
+
+body {
+	background: #FFFFFF;
+	color: #666;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 62.5%;
+	}
+
+.clear {
+	clear: both;
+	}
+img {
+	border: 0px;
+	}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	overflow: display;
+	}
+
+.container {
+	margin: auto;
+	padding: 20px;
+	}
+/*
+*	HEADER STYLES
+*/
+
+h1, h2 {
+	text-align: center;
+	}
+
+h1 {
+	font-size: 4.1em;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	color: #000;
+	}
+
+h2 {
+	font-size: 2.1em;
+	font-style: italic;
+	font-weight: normal;
+	color: #121212;
+	margin: 60px 0;
+	font-variant: small-caps;
+	}
+
+article p {
+	margin-bottom: 15px;
+	font-size: 1.6em;
+	}
+
+/*
+*	HASHTAG STYLES
+*/
+
+#hashtag {
+	background: #010F03;
+	padding: 30px 10px;
+	margin-top: 50px;
+	color: #FFF;
+	font-variant: small-caps;
+	}
+
+#hashtag h1, #poster h1 {
+	font-size: 2.4em;
+	font-weight: normal;
+	margin-bottom: 0;
+	color: #FFF;
+	}
+
+#hashtag h2 {
+	margin: 10px;
+	}
+
+#hashtag h2 a {
+	font-size: 2.4em;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	}
+
+/*
+*	POSTER STYLES
+*/
+
+#poster {
+	font-variant: small-caps;
+	text-align: center;
+	}
+
+#poster h1 {
+	color: #121212;
+	}
+
+#poster input.email {
+	border: 1px solid #CCC;
+	font-size: 2.5em;
+	line-height: 1.3em;
+	height: 50px;
+	width: 30%;
+	min-width: 360px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	padding: 5px;
+	}
+
+#poster input.submit {
+	padding: 10px;
+	background-color: green;
+	color: #FFF;
+	font-size: 2.5em;
+	border-radius: 5px;
+	margin-left: 10px;
+	}
+
+/*
+*	FOOTER STYLES
+*/
+
+footer {
+	padding: 50px 10px 0;
+	text-align: center;
+	}
+
+footer img {
+	border-radius: 200px;
+	border: 1px solid #CCC;
+	width: 200px;
+	margin-bottom: 20px;
+	}
+
+footer p {
+	font-size: 2.0em;
+	padding: 10px;
+	}
+
+footer p.copyright {
+	margin: 50px 0 0 0;
+	font-size: 1.2em;
+	}
+/*
+*	RESPONSIVE STYLES
+*/
+
+@media only screen and (min-width: 480px) {
+	h1 {
+		font-size: 6.0em;
+		}
+	}
+
+@media only screen and (min-width: 768px) {
+	h1 {
+		font-size: 8.0vw;
+		margin-top: 50px;
+		}
+
+	h2 {
+		font-size: 3.1vw;
+		margin: 5vw 0;
+		}
+
+	article p {
+		margin-bottom: 15px;
+		font-size: 2.0em;
+		}
+
+	.container {
+		width: 740px;
+		}
+
+	#hashtag {
+		margin-top: 5vw;
+		padding-bottom: 5vw;
+		}
+
+	#hashtag h1, #poster h1 {
+		font-size: 2.4vw;
+		}
+
+	#hashtag h2 {
+		margin: 2vw;
+		}
+
+	#hashtag h2 a {
+		font-size: 5.4vw;
+		color: #FFF;
+		}
+
+
+	}
+
+	.scroll {
+		position:relative;
+		font-size:1.3em;
+		margin-top:20px;
+		display:inline-block;
+
+	}
+	.scroll:hover {
+		text-decoration:none;
+	}
+
+	.scroll:after {
+		content:'';
+		width:40px;
+		height:40px;
+		position:absolute;
+		top:40px;
+		margin:auto;
+		top:50px;
+		right:0;
+		bottom:0;
+		left:0;
+		-webkit-animation:3s arrow infinite ease;
+		animation:3s arrow infinite ease;
+
+		border-right:2px solid gray;
+		border-bottom:2px solid gray;
+		-ms-transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		transform:rotate(45deg);
+
+	}
+
+
+.scroll {
+	width: 100%
+}
+section {
+	height: 100vh;
+	display: flex;
+	align-items: center;     /* Align the inner div vertically */
+	justify-content: center; /* Align the inner div horizontally */
+}
+
+section.flexless {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+section:nth-child(1) h1 {
+	margin-bottom: 100px;
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>One thing.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <article class="container">
+            <section class="flexless" data-section-name="one thing">
+    			<h1>Finish one thing today.</h1>
+                <a href="#just-one-thing" class="scroll"></a>
+            </section>
+            <section data-section-name="just one thing">
+    			<h2>just. one. little. thing.</h2>
+            </section>
+            <section class="flexless" data-section-name="it doesn't have to...">
+    			<p>It doesn’t have to be big.</p>
+    			<p>It doesn’t have to be important.</p>
+    			<p>It doesn’t have to be perfect.</p>
+    			<p>It doesn’t have to be revolutionary.</p>
+    			<p>It doesn’t have to be new.</p>
+    			<p>It doesn’t have to have bells and whistles.</p>
+    			<p>It doesn’t have to impress other people.</p>
+    			<p>It doesn’t have to mean anything.</p>
+    			<p>It doesn’t have to change the world.</p>
+    			<p>It doesn’t have to follow the latest trends.</p>
+            </section>
+            <section data-section-name="it just needs to be finished">
+    			<h2>it just needs to be finished.</h2>
+            </section>
+            <section class="flexless" data-section-name="if it's...">
+    			<p>If it’s too big, break it into smaller chunks.</p>
+    			<p>If it’s too hard, break it into easier chunks.</p>
+    			<p>If it’s too daunting, break it into manageable chunks.</p>
+    			<p>If it’s too scary, face the fear head on.</p>
+            </section>
+            <section data-section-name="ship it">
+    			<h2>ship one thing today.</h2>
+            </section>
+            <section class="flexless" data-section-name="if you don't...">
+    			<p>If you don’t have the time, wake up 30 minutes earlier.</p>
+    			<p>If you don’t have the drive, get it by forming a habit.</p>
+    			<p>If you don’t have the knowledge, make learning today’s goal.</p>
+    			<p>If you don’t have the resources, start small.</p>
+    			<p>If you don’t have an idea, imitate something else.</p>
+            </section>
+            <section data-section-name="release it">
+    			<h2>release it to the world.</h2>
+            </section>
+            <section class="flexless" data-section-name="you will...">
+    			<p>You will be scared.</p>
+    			<p>You will think it’s not important enough.</p>
+    			<p>You will think nobody will care.</p>
+    			<p>You will overestimate its importance.</p>
+    			<p>You will sometimes fail.</p>
+            </section>
+            <section data-section-name="it's ok...">
+    			<h2>but it’s ok, you will have something to show for it.</p>
+            </section>
+            <section data-section-name="then...">
+    			<h2>then once you are done&hellip;</h2>
+            </section>
+            <section data-section-name="celebrate">
+    			<h2>celebrate&hellip;</h2>
+            </section>
+            <section data-section-name="rest">
+    			<h2>rest&hellip;</h2>
+            </section>
+            <section data-section-name="repeat">
+    			<h2>then do the same thing again tomorrow.</h2>
+    		</section>
+        </article>
+
+        <div id="top"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        // <script src="js/vendor/jquery.easing/js/jquery.easing.js"></script>
+        <script src="js/vendor/Scrollify/jquery.scrollify.js"></script>
+        <script src="js/vendor/scroll2top/scroll2top.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+        <script>
+            $(function() {
+                $.scrollify({
+                    section : "section"
+                });
+                $(".scroll").click(function(e) {
+                    e.preventDefault();
+                    $.scrollify("move",$(this).attr("href"));
+                });
+
+                $("#top").scroll2Top({
+                	appearAt: 2000,
+                	scrollSpeed: 200
+                });
+            });
+        </script>
+    </body>
+</html>
